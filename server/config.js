@@ -21,10 +21,28 @@ const CONF = {
         port: 3306,
         user: 'root',
         db: 'cAuth',
-        pass: '',
+        pass: 'wxcfb5037118906fb4',
         char: 'utf8mb4'
     },
 
+    imageDB: {
+        host: 'localhost',
+        port: 3306,
+        db: 'Images',
+        user: 'root',
+        pass: 'wxcfb5037118906fb4',
+        char: 'utf8'
+    },
+
+    questionDB:{
+        host:'localhost',
+        port:3306,
+        database:'questions',
+        user:'root',
+        password:'wxcfb5037118906fb4',
+        char:'utf8'
+    },
+    
     cos: {
         /**
          * 地区简称

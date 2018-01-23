@@ -1,0 +1,26 @@
+<!--pages/myPage/myPage.wxml-->
+<view>
+    <text class="question-text" wx:if="{{questions}}!=undefined">{{questions.question}}</text>
+</view>
+
+<view>
+    <radio-group bindchange="radioChange">
+        <label class="radio-label"  wx:for="{{questions.answers}}">
+            <radio value="{{item.value}}" checked='{{radioSelectFlag}}'/>{{item.value}}: {{item.text}}
+        </label>
+    </radio-group>
+</view>
+
+<text wx:if="{{correctMsg != undefined}}">{{correctMsg}} </text>
+<!--服务端数据库返回的图片地址-->
+<!--
+<view visiability="false">
+  <image 
+    wx:for="{{imageUrls}}"
+    src='{{item.url}}'
+    mode='aspectFit'
+    style='width:100px; height:100px'
+    animation='{{animationData}}'>
+  </image>
+</view>
+-->

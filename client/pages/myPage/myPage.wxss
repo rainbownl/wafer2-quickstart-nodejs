@@ -1,0 +1,9 @@
+/* pages/myPage/myPage.wxss */
+.radio-label{
+    width:800px;
+    margin-left:20px;
+}
+
+.question-text{
+    margin-left: 10px;
+}
